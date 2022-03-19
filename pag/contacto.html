@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <!-- css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- =================================================================================== -->
+    <!-- ------------------------------------ HEADER --------------------------------------- -->
+    <!-- =================================================================================== -->
+    
+    <header class="container-fluid bg-light position-sticky top-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container">
+              <a class="navbar-brand" href="#">Athenea</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Anillos</a></li>
+                      <li><a class="dropdown-item" href="#">Aros</a></li>
+                      <li><a class="dropdown-item" href="#">Collares</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pag/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    
+    <!-- =================================================================================== -->
+    <!-- ------------------------------------ IMAGEN --------------------------------------- -->
+    <!-- =================================================================================== -->
+
+    <div class="container-fluid img__contacto">
+        <div class="container h-75 d-flex flex-column justify-content-end align-items-center">
+            <h4 class="text-light text-uppercase fs-1 text-center">Contacto</h4>
+            <p class="text-light text-center fs-5">+54 3572-000000</p>
+        </div>
+        
+    </div>
+
+
+    <!-- =================================================================================== -->
+    <!-- ------------------------------------ FORMULARIO ----------------------------------- -->
+    <!-- =================================================================================== -->
+
+
+    <main class="container-fluid">
+        <div class="container mt-5 p-lg-5">
+            <div class="row mx-auto py-5 px-3 px-lg-5 ancho__lg__formulario ancho__sm__formulario  sombra__formulario">
+                <h4 class="text-center text-uppercase">Estamos en contacto</h4>
+                <p>Los campos marcados con <span class="text-danger">*</span> son obligatorio</p>
+                <div class="col-12 col-lg-6">
+                    <input class="w-100 borde__input__contacto py-2 ps-3" type="text" placeholder="Nombre" name="" id="">
+                </div>
+                <div class="col-12 col-lg-6 mt-3 mt-lg-0">
+                    <input class="w-100 borde__input__contacto py-2 ps-3" type="text" placeholder="Apellido" name="" id="">
+                </div>
+                <div class="col-12 mt-3">
+                    <input class="w-100 borde__input__contacto py-2 ps-3" type="email" name="" id="" placeholder="Correo electrónico">
+                </div>
+                <div class="col-12 my-3">
+                    <input class="w-100 borde__input__contacto py-2 ps-3" type="text" name="" id="" placeholder="Asunto">
+                </div>
+                <div class="col-12">
+                    <textarea class="w-100 borde__input__contacto py-2 ps-3" name="" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="col-12 form-check ms-2 text-center my-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label" for="flexCheckChecked">He leído y acepto las <span>políticas de tratamiento de datos de la web</span></label>
+                </div>
+                <div class="col-12 p-2">
+                    <button class="w-auto border-0 px-3 py-2 bg-dark text-light" type="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <!-- ==================================================================================================== -->
+                                            <!-- FOOTER -->
+    <!-- ==================================================================================================== -->
+
+    <div class="container-fluid contenedor__footer mt-5">
+        <div class="container">
+          <div class="row align-items-baseline">
+            <div class="col-12 col-md-4 text-center">
+              <img class="img__footer mb-3" src="../img/logo.png" alt="">
+              <p>Diseñamos, fabricamos y comercialización de piezas de orfebrería hechas a mano con materiales de
+                calidad garantizada, empaques amigables con el medio ambiente y una experiencia de compra impecable.</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <h3 class="titulo__footer mb-3">Información</h3>
+              <p>Políticas de envíos</p>
+              <p>Políticas de protección de datos</p>
+              <p>Términos y condiciones</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <h3 class="titulo__footer">Menú</h3>
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                  <a class="nav-link active text-dark" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>    
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
