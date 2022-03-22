@@ -19,38 +19,69 @@
     <!-- =================================================================================== -->
     
     <header class="container-fluid bg-light position-sticky top-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">Athenea</a>
+              <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo" width="70px" class="p-0 m-0"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Inicio</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Productos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#">Anillos</a></li>
-                      <li><a class="dropdown-item" href="#">Aros</a></li>
-                      <li><a class="dropdown-item" href="#">Collares</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">Anillos</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">Aros</a></li>
+                      <li><a class="dropdown-item text-dark" href="#">Collares</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Quienes somos</a>
+                    <a class="nav-link text-dark" href="#">Quienes somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pag/contacto.html">Contacto</a>
+                    <a class="nav-link text-dark" href="./pag/contacto.html">Contacto</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
     </header>
+
+    <!-- =================================================================================== -->
+    <!--                                      SLIDER                                         -->
+    <!-- =================================================================================== -->
+
+  <div id="carouselExampleIndicators" class="carousel slide w-100 mb-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner h-auto">
+      <div class="carousel-item active contenedor-img">
+        <img src="./img/slider/img_slider-01.jpg" class="d-block img-slider img-fluid" alt="imagen slider 1">
+      </div>
+      <div class="carousel-item contenedor-img">
+        <img src="./img/slider/img_slider-02.jpg" class="d-block img-slider img-fluid" alt="imagen slider 2">
+      </div>
+      <div class="carousel-item contenedor-img">
+        <img src="./img/slider/img_slider-03.jpg" class="d-block img-slider img-fluid" alt="imagen slider 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 
     <!-- =================================================================================== -->
@@ -61,24 +92,39 @@
         <div class="container">
             <div class="row d-flex justify-content-center flex-lg-row gap-5 gap-lg-0 mx-lg-0 px-lg-3">
                 <div class="col-12 col-lg-4">
-                    <div class="d-flex mx-auto flex-column align-items-center justify-content-around contenedor__individual">
+                    <div class="d-flex mx-auto flex-column align-items-center justify-content-around contenedor__individual borde--amarillo position-relative">
                         <img class="imagen-m-n-c" src="img/section-img/logo1.jpg" alt="">
-                        <div class="separador"></div>
+                        <div class="separador separador--amarillo"></div>
                         <p class="texto__m-n-c">Más vendidos</p>
+                        <div class="contenedor__efecto__hover position-absolute  h-100 w-100 contenedor__hover">
+                          <div class="h-100 w-100 amarillo d-flex justify-content-center align-items-center">
+                            <a class="hover__link text-light text-decoration-none border-light" href="">Más vendidos</a>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="d-flex mx-auto flex-column align-items-center justify-content-around contenedor__individual">
-                        <img class="imagen-m-n-c" src="img/section-img/logo1.jpg" alt="">
-                        <div class="separador"></div>
-                        <p class="texto__m-n-c">Más vendidos</p>
+                    <div class="d-flex mx-auto flex-column align-items-center justify-content-around contenedor__individual borde--verde position-relative">
+                        <img class="imagen-m-n-c" src="img/section-img/logo2.jpg" alt="">
+                        <div class="separador separador--verde"></div>
+                        <p class="texto__m-n-c">Nuevos</p>
+                        <div class="contenedor__efecto__hover position-absolute  h-100 w-100 contenedor__hover">
+                          <div class="h-100 w-100 verde d-flex justify-content-center align-items-center">
+                            <a class="hover__link text-light text-decoration-none border-light" href="">Nuevos</a>
+                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="d-flex mx-auto flex-column align-items-center justify-content-around contenedor__individual">
-                        <img class="imagen-m-n-c" src="img/section-img/logo1.jpg" alt="">
-                        <div class="separador"></div>
-                        <p class="texto__m-n-c">Más vendidos</p>
+                    <div class="d-flex mx-auto flex-column align-items-center justify-content-around contenedor__individual borde--gris position-relative">
+                        <img class="imagen-m-n-c" src="img/section-img/logo3.jpg" alt="">
+                        <div class="separador separador--gris"></div>
+                        <p class="texto__m-n-c">Colección</p>
+                        <div class="contenedor__efecto__hover position-absolute  h-100 w-100 contenedor__hover">
+                          <div class="h-100 w-100 gris d-flex justify-content-center align-items-center">
+                            <a class="hover__link text-light text-decoration-none border-light" href="">Colección</a>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -117,13 +163,13 @@
             <div class="row px-2 mb-4 mx-0">
               <div class="col text-center">
                 <p class="m-2">Hecho con amor</p>
-                <div class="d-md-flex justify-content-center position-relative">
+                <div class="d-md-flex justify-content-center position-relative mx-3">
                   <div class="order-2 position-absolute d-none d-md-block end-0 me-5">
                     <img class="tamaño-arrow" src="img/destacada/Arrow-1.png" alt="">
                   </div>
                   <h2 class="m-0 p-0 fs-5">Joyería destacada</h2>
                 </div>
-                <div class="separador-destacada mx-auto"></div>
+                <div class="separador-destacada mx-auto mt-3"></div>
               </div>
             </div>
             <div class="row px-xxl-5 mx-xxl-3">
@@ -165,13 +211,13 @@
             <div class="row px-2 mb-4 mx-0">
               <div class="col text-center">
                 <p class="m-2">Hecho con amor</p>
-                <div class="d-md-flex justify-content-center position-relative">
+                <div class="d-md-flex justify-content-center position-relative mx-3">
                   <div class="order-2 position-absolute d-none d-md-block end-0 me-5">
                     <img class="tamaño-arrow" src="img/destacada/Arrow-1.png" alt="">
                   </div>
                   <h2 class="m-0 p-0 fs-5">Joyería destacada</h2>
                 </div>
-                <div class="separador-destacada mx-auto"></div>
+                <div class="separador-destacada mx-auto mt-3"></div>
               </div>
             </div>
             <div class="row px-xxl-5 mx-xxl-3">
@@ -185,10 +231,10 @@
               </div>
               <div class="col-12 col-sm-12 col-md-4 text-center"> 
                 <div class="contenedor-imagen-producto mx-auto">
-                  <img class="w-100" src="img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt="">
+                  <img class="w-100 img-fluid" src="img/destacada/Collar-de-Mama-e-hija-300x300.jpg" alt="">
                 </div>
                 <a class="text-decoration-none" href="">Collares</a>
-                <h6 class="text-uppercase">Collar de mamáa</h6>
+                <h6 class="text-uppercase">Collar de mamá</h6>
                 <span>$ 32.00 - $42.00</span>
               </div>
               <div class="col-12 col-sm-12 col-md-4 text-center"> 
@@ -211,31 +257,41 @@
       
     </section>
 
-
-
     <!-- ==================================================================================================== -->
                                           <!-- VINCULOS PARA SIEMPRE -->
     <!-- ==================================================================================================== --> 
 
-    <section class="container-fluid">
-      <div class="container d-flex justify-content-center position-relative mt-5">
-        <img class="img-fluid" src="img/vinculos/IMG_6298-1.jpg" alt="">
-        <div class="position-absolute w-100 text-center absolute__vinculos">
+    <!-- <section class="container-fluid">
+      <div class="container contenedor__vinculos bg-info mt-5 w-100 position-relative">
+        <img class="img__vinculos" src="img/vinculos/IMG_6298-1.jpg" alt="">
+        <div class="position-absolute w-100 px-0 mx-0 bg-danger top-0 text-center">
           <p class="text-uppercase text-light vinculos__texto">Pulseras</p>
-          <h2 class="text-uppercase text-light my-3 fs-6">Que crean vínculos para siempre</h2>
-          <button class="border-0 p-1">
-            <input class="border-0 text-uppercase texto__boton__vinculos" type="button" value="comprar ahora">
+          <h2 class="text-uppercase text-light my-3">Que crean vínculos para siempre</h2>
+          <button class="border-0 p-0 bg-transparent">
+            <input class="border-0 m-0 text-uppercase texto__boton__vinculos text-light" type="button" value="comprar ahora">
           </button>
         </div>
       </div>
-    </section>
+    </section> -->
 
+    <section class="container-fluid mt-5">
+      <div class="container position-relative p-0 contenedor__vinculos">
+        <img class="img-slider img-fluid" src="img/vinculos/IMG_6298-1.jpg" alt="">
+          <div class="position-absolute top-50 w-100 text-center h-25">
+            <p class="text-uppercase text-light vinculos__texto">Pulseras</p>
+            <h2 class="text-uppercase text-light my-3">Que crean vínculos para siempre</h2>
+            <button class="border-0 p-0 bg-transparent">
+              <input class="border-0 m-0 text-uppercase text-light texto__boton__vinculos" type="button" value="comprar ahora">
+            </button>
+          </div>
+      </div>
+    </section>
 
     <!-- ==================================================================================================== -->
                                             <!-- SUSCRÍBETE -->
     <!-- ==================================================================================================== -->
 
-    <div class="container-fluid contenedor__susbribete my-5">
+    <div class="container-fluid contenedor__susbribete mt-5">
       <div class="container mx-auto d-flex flex-column align-items-center justify-content-center gap-3 h-100">
         <h3 class="text-uppercase fs-5">Suscríbete en Athenea jOYAS</h3>
         <p class="texto__suscribete text-center w-75">Manténgase informada sobre los últimos consejos de estilos y lanzamientos de productos.
@@ -254,7 +310,7 @@
     <!-- ==================================================================================================== -->
 
     <div class="container-fluid contenedor__footer">
-      <div class="container">
+      <div class="container d-flex h-100 align-items-center">
         <div class="row align-items-baseline">
           <div class="col-12 col-md-4 text-center">
             <img class="img__footer mb-3" src="./img/logo.png" alt="">
